@@ -3,6 +3,47 @@
   padding: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #6e728e;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 5vh 0 2vh 0;
+  text-align: center;
+}
+
+.buttonSection p {
+  color: #6e728e;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+  opacity: 0.5;
+}
+
+.card {
+  width: 327px;
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.card:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.card:nth-child(even) {
+  background: linear-gradient(135deg, #a2a7f0 0.06%, #696edd 100.06%);
+  color: #ffffff;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
