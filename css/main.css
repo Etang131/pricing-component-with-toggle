@@ -33,23 +33,62 @@ h1 {
 .card {
   box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
   border-radius: 10px;
+  height: 453px;
   width: 327px;
   margin-top: 3vh;
   text-align: center;
+
+  position: relative;
 }
 
-.card > p {
+.cardTitle {
+  position: relative;
   font-size: 1.125rem;
   font-weight: bold;
   line-height: 1.75rem;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.card h2 {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 71px;
+  letter-spacing: -2.16px;
+  padding-top: 20px;
 }
 
 .card:nth-child(odd) {
   background-color: #ffffff;
 }
 
-.card:nth-child(odd) p {
+.card:nth-child(odd) .cardTitle {
   color: #6e728e;
+}
+
+.card:nth-child(odd) h2 {
+  color: #4a4d60;
+}
+
+.card:nth-child(even) h2 {
+  color: #fff;
+}
+
+.card:nth-child(odd) li {
+  color: #6e728e;
+}
+
+.card:nth-child(even) li {
+  color: #fff;
+}
+
+.card:nth-child(odd) .cardButton {
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  color: #fff;
+}
+
+.card:nth-child(even) .cardButton {
+  color: #6d72de;
 }
 
 .card:nth-child(even) {
@@ -57,9 +96,50 @@ h1 {
   color: #ffffff;
 }
 
+.featureList {
+  margin-top: 50px;
+}
+
+hr {
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  margin: 10px 10%;
+  width: 80%;
+}
+
+.card:nth-child(odd) hr {
+  background: #6e728e;
+}
+
+.card:nth-child(odd) hr {
+  background: #fff;
+}
+
 li {
+  font-weight: bold;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
   list-style-type: none;
+  margin-top: 12px;
   text-decoration: none;
+}
+
+.cardButton {
+  border: none;
+  border-radius: 6px;
+  font-family: Montserrat;
+  letter-spacing: 1.39286px;
+  height: 44px;
+  width: 269px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 1rem;
+
+  position: absolute;
+  left: 8.8685%;
+  right: 0%;
+  top: 83.75%;
+  bottom: 0%;
 }
 
 .attribution {
