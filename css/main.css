@@ -8,7 +8,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/*needs work but I'm getting there*/
 .topImg {
   position: absolute;
   width: 80%;
@@ -169,15 +168,6 @@ input:checked + .slider:before {
   color: #fff;
 }
 
-.card:nth-child(odd) .cardButton {
-  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
-  color: #fff;
-}
-
-.card:nth-child(even) .cardButton {
-  color: #6d72de;
-}
-
 .card:nth-child(even) {
   background: linear-gradient(135deg, #a2a7f0 0.06%, #696edd 100.06%);
   color: #ffffff;
@@ -198,7 +188,7 @@ hr {
   background: #6e728e;
 }
 
-.card:nth-child(odd) hr {
+.card:nth-child(even) hr {
   background: #fff;
 }
 
@@ -227,6 +217,38 @@ li {
   right: 0%;
   top: 83.75%;
   bottom: 0%;
+}
+
+.card:nth-child(odd) .cardButton {
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  color: #fff;
+}
+
+.card:nth-child(even) .cardButton {
+  color: #6d72de;
+}
+
+.oddHover:hover {
+  background: #fff;
+  border: 1px solid #6d72de;
+  color: #6d72de;
+  cursor: crosshair;
+}
+
+.card:nth-child(odd) .cardButton:hover {
+  background: #fff;
+  border: 1px solid #6d72de;
+  color: #6d72de;
+}
+
+.cardButton:nth-child(even):hover {
+  background-color: #6d72de;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.cardButton:hover {
+  cursor: pointer;
 }
 
 .attribution {
