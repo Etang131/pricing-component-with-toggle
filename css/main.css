@@ -290,11 +290,16 @@ li {
   }
 
   .card:nth-child(odd) {
-    margin-top: 48px;
+    margin-top: 24px;
   }
 
   .card:nth-child(even) {
     padding: 24px 0;
+    margin-top: 0;
+  }
+
+  .middleButon {
+    top: 81.125%;
   }
 
   .attribution {
