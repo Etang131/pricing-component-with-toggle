@@ -6,20 +6,19 @@
 body {
   background-color: #f7f7fe;
   font-family: "Montserrat", sans-serif;
+  background: url("/images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .topImg {
   position: absolute;
-  width: 80%;
+  width: 70%;
   max-width: 725px;
   height: 50%;
   left: 60%;
   top: -2%;
   z-index: -2;
-}
-
-.bottomImg {
-  display: none;
 }
 
 .container {
@@ -90,6 +89,10 @@ https://www.w3schools.com/howto/howto_css_switch.asp
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.slider:hover {
+  opacity: 0.5;
 }
 
 input:checked + .slider {
@@ -265,21 +268,15 @@ li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+
+    height: auto;
+    background: url("/images/bg-bottom.svg"), url("/images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
   }
 
   .container {
-    margin: auto;
-  }
-
-  .bottomImg {
-    display: block;
-    position: absolute;
-    width: 32%;
-    height: 60%;
-    left: -6%;
-    top: 50%;
-    z-index: -3;
+    margin: 0 10% 0 10%;
   }
 
   .cardSection {
@@ -302,11 +299,5 @@ li {
 
   .attribution {
     margin-top: 5vh;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .topImg {
-    left: 75%;
   }
 }
